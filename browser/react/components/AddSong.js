@@ -10,7 +10,8 @@ export default function (props) {
 
   return (
     <div className="well">
-      <form className="form-horizontal" noValidate name="songSelect" onSubmit={handleSubmit}>
+      <form className="form-horizontal" noValidate name="songSelect" onSubmit={
+      props.handleSubmit}>
         <fieldset>
           <legend>Add to Playlist</legend>
           { error && <div className="alert alert-danger">Song is a duplicate</div> }
